@@ -17,9 +17,9 @@ RUN apk --no-cache add \
     ca-certificates \
     tini
 
-COPY run.sh /usr/local/bin/run.sh
-
 RUN mkdir -p /usr/local/bin
+
+COPY run.sh /usr/local/bin/run.sh
 
 RUN chmod +x /usr/local/bin/run.sh
 
