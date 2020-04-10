@@ -19,6 +19,8 @@ RUN apk --no-cache add \
 
 COPY run.sh /usr/local/bin/run.sh
 
+RUN mkdir -p /usr/local/bin
+
 RUN chmod +x /usr/local/bin/run.sh
 
 COPY target/dependency/airsonic-main.war airsonic.war
